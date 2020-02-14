@@ -13,12 +13,11 @@ func evaluate(_ math:String) -> String{
     if let i = result.firstIndex(of: "(") {result.remove(at: i)
         return evaluate(result)
     }
-    else {
-        switch result.index(before: ) {
-        case "+":
-            <#code#>
-        default:
-            <#code#>
-        }
-    }
+//    else {
+//        switch result.index(before: ) {
+//        case "+":
+//        default:
+//        }
+//    }
+    return ""
 }

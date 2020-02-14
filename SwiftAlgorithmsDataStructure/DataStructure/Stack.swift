@@ -34,24 +34,30 @@ public final class Stack<E> : Sequence {
     /// - Parameter item: the item to add
     public func push(item: E) {
         // MARK: - TODO
+        let oldFirst = first
+        first = Node<E>(item: item)
+        first?.next = oldFirst
+        count += 1
     }
     
     /// Removes and returns the item most recently added to this stack.
     public func pop() -> E? {
         // MARK: - TODO
-        return nil
+        let item = first?.item
+        first = first?.next
+        return item
     }
     
     /// Returns (but does not remove) the item most recently added to this stack.
     public func peek() -> E? {
         // MARK: - TODO
-        return nil
+        return first?.item
     }
     
     /// Returns true if this stack is empty.
     public func isEmpty() -> Bool {
         // MARK: - TODO
-        return false
+        return first == nil
     }
     
     /// StackIterator that iterates over the items in LIFO order.
@@ -60,11 +66,14 @@ public final class Stack<E> : Sequence {
         
         fileprivate init(_ first: Node<E>?) {
             // MARK: - TODO
+            current = first
         }
         
         public mutating func next() -> E? {
             // MARK: - TODO
-            return nil
+            let item = current?.item
+            current = current?.next
+            return item
         }
         
         public typealias Element = E
