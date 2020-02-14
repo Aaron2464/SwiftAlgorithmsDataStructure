@@ -58,6 +58,7 @@ public final class Queue<E> : Sequence {
         // MARK: - TODO
         let item = first?.item
         first = first?.next
+        count -= 1
         return item
     }
     
