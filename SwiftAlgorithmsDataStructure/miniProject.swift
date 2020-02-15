@@ -15,8 +15,8 @@ func showDirectories(path: String) {
     print("\(dirsCount) directories, \(filesCount) files")
 }
 
-func fileExists(atPath path: String, isDirectory: ObjCBool) -> Bool{
-    var isDir = isDirectory
+func fileExists(atPath path: String) -> Bool{
+    var isDir: ObjCBool = false
     FileManager.default.fileExists(atPath: path, isDirectory: &isDir)
     return isDir.boolValue
 }
@@ -28,7 +28,6 @@ func getAllFilesAndDirectories(url: String, targetName: String, sign: String, fi
     }
     let lastIndex: Int = files.endIndex - 1
     for (idx, file) in files.enumerated() {
-        let isDir : ObjCBool = false
         let filePath = url + "/" + file
         var addSign: String = ""
         var passSign: String = ""
@@ -41,7 +40,7 @@ func getAllFilesAndDirectories(url: String, targetName: String, sign: String, fi
             passSign = sign + "│ "
         }
 
-        if fileExists(atPath: filePath, isDirectory: isDir){
+        if fileExists(atPath: filePath){
             print(sign + addSign + file)
             dirsCount += 1
             getAllFilesAndDirectories(url: filePath, targetName: file, sign: passSign, filesCount: &filesCount, dirsCount: &dirsCount)
