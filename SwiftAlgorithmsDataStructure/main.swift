@@ -50,3 +50,7 @@ print(stack.pop() as Any)
 for s in stack {
     print(s);
 }
+
+runRollDiceSum()
+
+showDirectories(path: "/Users/aaronh/XcodeProject")
