@@ -11,7 +11,8 @@ import Foundation
 func showDirectories(path: String) {
     var filesCount = 0
     var dirsCount = 0
-    getAllFilesAndDirectories(url: path, targetName: "", sign: "", filesCount: &filesCount, dirsCount: &dirsCount)
+    print(path)
+    getAllFilesAndDirectories(url: path, sign: "", filesCount: &filesCount, dirsCount: &dirsCount)
     print("\(dirsCount) directories, \(filesCount) files")
 }
 
@@ -21,7 +22,7 @@ func fileExists(atPath path: String) -> Bool{
     return isDir.boolValue
 }
 
-func getAllFilesAndDirectories(url: String, targetName: String, sign: String, filesCount: inout Int, dirsCount: inout Int) {
+func getAllFilesAndDirectories(url: String, sign: String, filesCount: inout Int, dirsCount: inout Int) {
     let f = FileManager()
     guard let files = try? f.contentsOfDirectory(atPath: url) else {
         return
@@ -34,7 +35,7 @@ func getAllFilesAndDirectories(url: String, targetName: String, sign: String, fi
         
         if idx == lastIndex {
             addSign = "└─ "
-            passSign = sign + " "
+            passSign = sign + "  "
         } else {
             addSign = "├─ "
             passSign = sign + "│ "
@@ -43,7 +44,7 @@ func getAllFilesAndDirectories(url: String, targetName: String, sign: String, fi
         if fileExists(atPath: filePath){
             print(sign + addSign + file)
             dirsCount += 1
-            getAllFilesAndDirectories(url: filePath, targetName: file, sign: passSign, filesCount: &filesCount, dirsCount: &dirsCount)
+            getAllFilesAndDirectories(url: filePath, sign: passSign, filesCount: &filesCount, dirsCount: &dirsCount)
         } else {
             filesCount += 1
             print(sign + addSign + file)
