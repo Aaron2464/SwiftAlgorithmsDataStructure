@@ -19,8 +19,8 @@ var count = 0
 var col = 0
 func solveQueens(board: inout Board, row: Int){
     if row == board.size{
-        print("\(count) possible ways")
         count += 1
+        print("\(count) possible ways")
         print(board)
         return
     }else{
