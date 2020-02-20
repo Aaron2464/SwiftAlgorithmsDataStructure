@@ -28,8 +28,8 @@ func solveQueens(board: inout Board, row: Int){
     
     if row == board.size{
         count += 1
-        print(board)
-        print("\(count) possible ways, \(sum) calls")
+        print("\(board)\(count) possible ways, \(sum) calls")
+        print()
         return
     }else{
         for col in 0..<board.size{
