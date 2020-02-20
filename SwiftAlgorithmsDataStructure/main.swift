@@ -54,3 +54,9 @@ for s in stack {
 runRollDiceSum()
 
 showDirectories(path: "/Users/aaronh/XcodeProject")
+
+var board:Board = Board.init(size: 8)
+
+solveQueens(board: &board, row: 0)
+
+treeTraveral()

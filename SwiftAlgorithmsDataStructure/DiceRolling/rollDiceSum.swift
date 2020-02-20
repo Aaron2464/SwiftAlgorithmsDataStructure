@@ -9,7 +9,7 @@
 import Foundation
 
 
-func rollDiceSum(dice:Int, sum:Int,soFar:Int, _ chosen: inout [Int]){
+func rollDiceSum(dice:Int, sum:Int, soFar:Int, _ chosen: inout [Int]){
     if soFar == sum{
         print(chosen)
     }else{
