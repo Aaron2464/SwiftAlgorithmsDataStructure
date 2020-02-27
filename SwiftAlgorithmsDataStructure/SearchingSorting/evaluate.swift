@@ -10,14 +10,15 @@ import Foundation
 
 func evaluate(_ math:String) -> String{
     var result = math
-    if let i = result.firstIndex(of: "(") {result.remove(at: i)
+    if let i = result.firstIndex(of: "(") {
+        result.remove(at: i)
         return evaluate(result)
     }
-//    else {
-//        switch result.index(before: ) {
-//        case "+":
-//        default:
-//        }
-//    }
+    //    else {
+    //        switch result.index(before: ) {
+    //        case "+":
+    //        default:
+    //        }
+    //    }
     return ""
 }

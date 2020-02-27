@@ -54,3 +54,12 @@ func treeTraveral() {
     postOrder(0)
     print()
 }
+
+//7
+//A B C
+//B D .
+//C E F
+//E . .
+//F . G
+//D . .
+//G . .
