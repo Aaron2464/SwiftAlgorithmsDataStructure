@@ -15,20 +15,35 @@
 //You are allowed to use any data structures / algorithms of your choice.
 
 import Foundation
-
-
 var m: [Int] = [Int]()
 
 func findSmallest(n: [Int], count: Int) {
     for i in n {
         if m.count < count {
             m.append(i)
-            
         } else {
-            
+            m = compare(inputM: m, append: i)
         }
     }
     print(m)
 }
 
 
+func compare(inputM: [Int], append: Int) -> [Int]{
+    m = quickSort(inputM)
+    // find smallest
+    if m[m.endIndex-1] > append{
+        m = [Int](m.dropLast())
+        m.append(append)
+    }
+    
+    // find largest
+//        if m[m.startIndex] < append{
+//            m = [Int](m.dropFirst())
+//            m.append(append)
+//        }
+    return m
+}
+
+
+			

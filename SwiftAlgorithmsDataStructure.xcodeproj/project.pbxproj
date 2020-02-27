@@ -76,6 +76,7 @@
 		9DA99DFE2400918D00475F32 /* Diameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diameter.swift; sourceTree = "<group>"; };
 		9DAC492023FC9C8000018412 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		9DAC492123FC9C8000018412 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		9DF660C7240876AA00B267F4 /* UF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +145,7 @@
 		9D9F33A623F2200500569A59 /* SwiftAlgorithmsDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9DF660C6240876A000B267F4 /* UF */,
 				9D534CB12405EEFE0025B4CF /* LCA */,
 				9D534CAC2404A3BC0025B4CF /* Graph */,
 				9DA99DFB2400913A00475F32 /* TreeQuiz */,
@@ -225,6 +227,14 @@
 				9DA99DFE2400918D00475F32 /* Diameter.swift */,
 			);
 			path = TreeQuiz;
+			sourceTree = "<group>";
+		};
+		9DF660C6240876A000B267F4 /* UF */ = {
+			isa = PBXGroup;
+			children = (
+				9DF660C7240876AA00B267F4 /* UF.swift */,
+			);
+			path = UF;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
