@@ -33,6 +33,9 @@
 		9DA99DFF2400918D00475F32 /* Diameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA99DFE2400918D00475F32 /* Diameter.swift */; };
 		9DAC492223FC9C8000018412 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC492023FC9C8000018412 /* QueensSolver.swift */; };
 		9DAC492323FC9C8000018412 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC492123FC9C8000018412 /* Board.swift */; };
+		9DF660CA24087C3900B267F4 /* FloodFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660C924087C3900B267F4 /* FloodFill.swift */; };
+		9DF660CC240883F300B267F4 /* HowManyIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660CB240883F300B267F4 /* HowManyIsland.swift */; };
+		9DF660CE24088F5100B267F4 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660CD24088F5100B267F4 /* Sushi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +80,9 @@
 		9DAC492023FC9C8000018412 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		9DAC492123FC9C8000018412 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		9DF660C7240876AA00B267F4 /* UF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
+		9DF660C924087C3900B267F4 /* FloodFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFill.swift; sourceTree = "<group>"; };
+		9DF660CB240883F300B267F4 /* HowManyIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyIsland.swift; sourceTree = "<group>"; };
+		9DF660CD24088F5100B267F4 /* Sushi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 				9D534CAD2404A3E30025B4CF /* BFS.swift */,
 				9D534CAF2405C7A40025B4CF /* DFS.swift */,
 				9D534CB4240718100025B4CF /* Graph.swift */,
+				9DF660CD24088F5100B267F4 /* Sushi.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -145,6 +152,7 @@
 		9D9F33A623F2200500569A59 /* SwiftAlgorithmsDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9DF660C824087C2200B267F4 /* FloodFill */,
 				9DF660C6240876A000B267F4 /* UF */,
 				9D534CB12405EEFE0025B4CF /* LCA */,
 				9D534CAC2404A3BC0025B4CF /* Graph */,
@@ -237,6 +245,15 @@
 			path = UF;
 			sourceTree = "<group>";
 		};
+		9DF660C824087C2200B267F4 /* FloodFill */ = {
+			isa = PBXGroup;
+			children = (
+				9DF660C924087C3900B267F4 /* FloodFill.swift */,
+				9DF660CB240883F300B267F4 /* HowManyIsland.swift */,
+			);
+			path = FloodFill;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,7 +324,9 @@
 				9D9F33CF23F74DE900569A59 /* rollDiceSum.swift in Sources */,
 				9D9F33B923F37CC700569A59 /* String+DPStringTool.swift in Sources */,
 				9D710CB423FF4B570077624F /* SubstringPattern.swift in Sources */,
+				9DF660CC240883F300B267F4 /* HowManyIsland.swift in Sources */,
 				9D9F33BF23F4C0D000569A59 /* exhaustive.swift in Sources */,
+				9DF660CE24088F5100B267F4 /* Sushi.swift in Sources */,
 				9D534CB32405F17D0025B4CF /* UF.swift in Sources */,
 				9D9F33C323F4D00200569A59 /* evaluate.swift in Sources */,
 				9D9F33B323F2286A00569A59 /* Sorting.swift in Sources */,
@@ -318,6 +337,7 @@
 				9DA99DFD2400917800475F32 /* FindParent.swift in Sources */,
 				9D710CAC23FDE4550077624F /* TreeOrderSort.swift in Sources */,
 				9D9F33C823F5F75800569A59 /* Queue.swift in Sources */,
+				9DF660CA24087C3900B267F4 /* FloodFill.swift in Sources */,
 				9D9F33B123F220ED00569A59 /* Searching.swift in Sources */,
 				9D710CAE23FDE54A0077624F /* TreeNode.swift in Sources */,
 				9D534CAE2404A3E30025B4CF /* BFS.swift in Sources */,

@@ -65,8 +65,10 @@ import Foundation
 
 //findParent()
 
-print(getIndexOfSubstrings(pattern: "est", source: "qwestd"))
+//print(getIndexOfSubstrings(pattern: "est", source: "qwestd"))
 
-findSmallest(n: [6,5,2,1,2,3,4,5,6,7,1], count: 5)
+//findSmallest(n: [6,5,2,1,2,3,4,5,6,7,1], count: 5)
 
 //findLargest(irnputNarray: [6,3,5,2,1], howManyEle: 4)
+
+SushiAdjacencyList()
