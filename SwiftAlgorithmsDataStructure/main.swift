@@ -71,4 +71,10 @@ import Foundation
 
 //findLargest(irnputNarray: [6,3,5,2,1], howManyEle: 4)
 
-SushiAdjacencyList()
+//SushiAdjacencyList()
+
+//print(lengthOfLongestSubstring("abcabcbb"))
+
+//TomatoFarm()
+
+CyclicPermutation()

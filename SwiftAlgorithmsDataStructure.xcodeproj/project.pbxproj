@@ -36,6 +36,10 @@
 		9DF660CA24087C3900B267F4 /* FloodFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660C924087C3900B267F4 /* FloodFill.swift */; };
 		9DF660CC240883F300B267F4 /* HowManyIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660CB240883F300B267F4 /* HowManyIsland.swift */; };
 		9DF660CE24088F5100B267F4 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660CD24088F5100B267F4 /* Sushi.swift */; };
+		9DF660D0240B415300B267F4 /* add2Num.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660CF240B415300B267F4 /* add2Num.swift */; };
+		9DF660D3240B584A00B267F4 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660D2240B584A00B267F4 /* LongestSubstring.swift */; };
+		9DF660D5240C42E100B267F4 /* TomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660D4240C42E100B267F4 /* TomatoFarm.swift */; };
+		9DF660D7240DD2FA00B267F4 /* CyclicPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660D6240DD2FA00B267F4 /* CyclicPermutation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +87,10 @@
 		9DF660C924087C3900B267F4 /* FloodFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFill.swift; sourceTree = "<group>"; };
 		9DF660CB240883F300B267F4 /* HowManyIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyIsland.swift; sourceTree = "<group>"; };
 		9DF660CD24088F5100B267F4 /* Sushi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi.swift; sourceTree = "<group>"; };
+		9DF660CF240B415300B267F4 /* add2Num.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = add2Num.swift; sourceTree = "<group>"; };
+		9DF660D2240B584A00B267F4 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
+		9DF660D4240C42E100B267F4 /* TomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoFarm.swift; sourceTree = "<group>"; };
+		9DF660D6240DD2FA00B267F4 /* CyclicPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicPermutation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 				9D534CAF2405C7A40025B4CF /* DFS.swift */,
 				9D534CB4240718100025B4CF /* Graph.swift */,
 				9DF660CD24088F5100B267F4 /* Sushi.swift */,
+				9DF660D6240DD2FA00B267F4 /* CyclicPermutation.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -152,6 +161,7 @@
 		9D9F33A623F2200500569A59 /* SwiftAlgorithmsDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9DF660D1240B501D00B267F4 /* leetCode */,
 				9DF660C824087C2200B267F4 /* FloodFill */,
 				9DF660C6240876A000B267F4 /* UF */,
 				9D534CB12405EEFE0025B4CF /* LCA */,
@@ -250,8 +260,18 @@
 			children = (
 				9DF660C924087C3900B267F4 /* FloodFill.swift */,
 				9DF660CB240883F300B267F4 /* HowManyIsland.swift */,
+				9DF660D4240C42E100B267F4 /* TomatoFarm.swift */,
 			);
 			path = FloodFill;
+			sourceTree = "<group>";
+		};
+		9DF660D1240B501D00B267F4 /* leetCode */ = {
+			isa = PBXGroup;
+			children = (
+				9DF660CF240B415300B267F4 /* add2Num.swift */,
+				9DF660D2240B584A00B267F4 /* LongestSubstring.swift */,
+			);
+			path = leetCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF660D3240B584A00B267F4 /* LongestSubstring.swift in Sources */,
 				9D534CB5240718100025B4CF /* Graph.swift in Sources */,
 				9D9F33B623F370DA00569A59 /* Recursion.swift in Sources */,
 				9D9F33BC23F4AA6300569A59 /* main.swift in Sources */,
 				9D534CB924072F670025B4CF /* Error+CustomErrors.swift in Sources */,
+				9DF660D5240C42E100B267F4 /* TomatoFarm.swift in Sources */,
 				9D710CB223FF49A70077624F /* findSmallest.swift in Sources */,
 				9D534CB7240722400025B4CF /* LCA.swift in Sources */,
 				9D9F33CC23F6210800569A59 /* miniProject.swift in Sources */,
@@ -324,6 +346,7 @@
 				9D9F33CF23F74DE900569A59 /* rollDiceSum.swift in Sources */,
 				9D9F33B923F37CC700569A59 /* String+DPStringTool.swift in Sources */,
 				9D710CB423FF4B570077624F /* SubstringPattern.swift in Sources */,
+				9DF660D7240DD2FA00B267F4 /* CyclicPermutation.swift in Sources */,
 				9DF660CC240883F300B267F4 /* HowManyIsland.swift in Sources */,
 				9D9F33BF23F4C0D000569A59 /* exhaustive.swift in Sources */,
 				9DF660CE24088F5100B267F4 /* Sushi.swift in Sources */,
@@ -333,6 +356,7 @@
 				9DA99DFF2400918D00475F32 /* Diameter.swift in Sources */,
 				9D9F33CA23F5F79800569A59 /* Stack.swift in Sources */,
 				9D9F33C623F5F72E00569A59 /* Bag.swift in Sources */,
+				9DF660D0240B415300B267F4 /* add2Num.swift in Sources */,
 				9D534CB02405C7A40025B4CF /* DFS.swift in Sources */,
 				9DA99DFD2400917800475F32 /* FindParent.swift in Sources */,
 				9D710CAC23FDE4550077624F /* TreeOrderSort.swift in Sources */,
