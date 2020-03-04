@@ -40,6 +40,7 @@
 		9DF660D3240B584A00B267F4 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660D2240B584A00B267F4 /* LongestSubstring.swift */; };
 		9DF660D5240C42E100B267F4 /* TomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660D4240C42E100B267F4 /* TomatoFarm.swift */; };
 		9DF660D7240DD2FA00B267F4 /* CyclicPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660D6240DD2FA00B267F4 /* CyclicPermutation.swift */; };
+		9DF660DA240F06D300B267F4 /* TopologicaSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660D9240F06D300B267F4 /* TopologicaSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +92,7 @@
 		9DF660D2240B584A00B267F4 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 		9DF660D4240C42E100B267F4 /* TomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoFarm.swift; sourceTree = "<group>"; };
 		9DF660D6240DD2FA00B267F4 /* CyclicPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicPermutation.swift; sourceTree = "<group>"; };
+		9DF660D9240F06D300B267F4 /* TopologicaSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicaSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		9D9F33A623F2200500569A59 /* SwiftAlgorithmsDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				9DF660D8240F06B000B267F4 /* TopologicaSort */,
 				9DF660D1240B501D00B267F4 /* leetCode */,
 				9DF660C824087C2200B267F4 /* FloodFill */,
 				9DF660C6240876A000B267F4 /* UF */,
@@ -274,6 +277,14 @@
 			path = leetCode;
 			sourceTree = "<group>";
 		};
+		9DF660D8240F06B000B267F4 /* TopologicaSort */ = {
+			isa = PBXGroup;
+			children = (
+				9DF660D9240F06D300B267F4 /* TopologicaSort.swift */,
+			);
+			path = TopologicaSort;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,6 +355,7 @@
 				9DAC492223FC9C8000018412 /* QueensSolver.swift in Sources */,
 				9DAC492323FC9C8000018412 /* Board.swift in Sources */,
 				9D9F33CF23F74DE900569A59 /* rollDiceSum.swift in Sources */,
+				9DF660DA240F06D300B267F4 /* TopologicaSort.swift in Sources */,
 				9D9F33B923F37CC700569A59 /* String+DPStringTool.swift in Sources */,
 				9D710CB423FF4B570077624F /* SubstringPattern.swift in Sources */,
 				9DF660D7240DD2FA00B267F4 /* CyclicPermutation.swift in Sources */,

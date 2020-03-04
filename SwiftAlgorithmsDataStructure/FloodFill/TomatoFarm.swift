@@ -18,7 +18,7 @@ func TomatoFarm(){
         let y: Int
     }
     let n = readLine()!.split(separator: " ").map { Int($0)! }
-
+    
     //box size
     let boxWidth = n[0]
     let boxLength = n[1]
@@ -28,15 +28,17 @@ func TomatoFarm(){
     
     // tomatoBox (input)
     var tomatoBox = [[Int]]()
-    // group (colored)
-    // (In Java, int[][] group = new int[25][25]; )
-    var group = [[Int]](repeating: [Int](repeating: 0, count: boxWidth), count: boxLength)
-    
-    func bfs(x: Int, y: Int, boxWidth: Int, boxLength: Int) {
+       
+    func bfs(boxWidth: Int, boxLength: Int, tomatoBox: inout [[Int]]) {
         let q = Queue<Square>()
-        q.enqueue(item: Square(x: x, y: y))
-        days += 1
-
+        for x in 0..<boxLength{
+            for y in 0..<boxWidth {
+                if tomatoBox[x][y] == 1{
+                    q.enqueue(item: Square(x: x, y: y))
+                }
+            }
+        }
+        
         while !q.isEmpty() {
             let square = q.dequeue()!
             let x = square.x
@@ -45,19 +47,17 @@ func TomatoFarm(){
             for i in 0..<4 {
                 let nx = x + dx[i]
                 let ny = y + dy[i]
-                // check the bounds
                 if nx >= 0 && nx < boxLength && ny >= 0 && ny < boxWidth {
-                    // check if there's a house and not yet marked in group
                     if tomatoBox[nx][ny] == 0{
-                        tomatoBox[nx][ny] = 1
-                    }else if tomatoBox[nx][ny] == 1{
-                        days -= 1
-                        bfs(x: nx, y: ny, boxWidth: boxWidth, boxLength: boxLength)
-                    }else {
-                        continue
+                        //if tomato unripe than add one day
+                        if tomatoBox[x][y] > days-1{
+                            days += 1
+                        }
+                        tomatoBox[nx][ny] = days
+                        //enqueue to next day
+                        q.enqueue(item: Square(x: nx, y: ny))
                     }
                 }
-                print(tomatoBox)
             }
         }
     }
@@ -68,26 +68,11 @@ func TomatoFarm(){
         tomatoBox.append(row)
     }
     
-    for x in 0..<boxLength{
-        for y in 0..<boxWidth {
-            if tomatoBox[x][y] == 1{
-                bfs(x: x, y: y, boxWidth: boxWidth, boxLength: boxLength)
-            }
-        }
-    }
-
-//    print(id) // how many groups? (how many ids)
-//    var answer = [Int](repeating: 0, count: boxWidth * boxLength)
-//    for i in 0..<boxLength {
-//        for j in 0..<boxWidth {
-//            answer[group[i][j]] += 1
-//        }
-//    }
-//    answer = Array(answer[1...id])
-//    answer.sort()
-//    for i in 0..<id {
-//        print(answer[i])
-//    }
+    bfs(boxWidth: boxWidth, boxLength: boxLength, tomatoBox: &tomatoBox)
     
-    print(days)
+    if(tomatoBox.flatMap{$0}.filter{$0==0}.count>0) {
+        print(-1)
+    }else{
+        print(days)
+    }
 }

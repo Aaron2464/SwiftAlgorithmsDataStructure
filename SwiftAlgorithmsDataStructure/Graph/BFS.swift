@@ -8,10 +8,6 @@
 
 import Foundation
 
-func bfs(){
-    
-}
-
 func storeInAdjacencyListAndBFS(){
     let firstLine = readLine()!.split(separator: " ")
     let n = Int(firstLine[0])!
