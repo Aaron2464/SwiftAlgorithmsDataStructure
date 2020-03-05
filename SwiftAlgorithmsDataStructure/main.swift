@@ -75,7 +75,9 @@ import Foundation
 
 //print(lengthOfLongestSubstring("abcabcbb"))
 
-TomatoFarm()
+//TomatoFarm()
+
+bridges()
 
 //CyclicPermutation()
 
