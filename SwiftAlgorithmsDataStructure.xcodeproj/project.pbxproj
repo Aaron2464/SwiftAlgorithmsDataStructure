@@ -17,6 +17,7 @@
 		9D710CAE23FDE54A0077624F /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D710CAD23FDE54A0077624F /* TreeNode.swift */; };
 		9D710CB223FF49A70077624F /* findSmallest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D710CB123FF49A70077624F /* findSmallest.swift */; };
 		9D710CB423FF4B570077624F /* SubstringPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D710CB323FF4B570077624F /* SubstringPattern.swift */; };
+		9D978F592411CDF600B7BF3F /* 210CourseScheduleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D978F582411CDF600B7BF3F /* 210CourseScheduleII.swift */; };
 		9D9F33B123F220ED00569A59 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9F33B023F220ED00569A59 /* Searching.swift */; };
 		9D9F33B323F2286A00569A59 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9F33B223F2286A00569A59 /* Sorting.swift */; };
 		9D9F33B623F370DA00569A59 /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9F33B523F370DA00569A59 /* Recursion.swift */; };
@@ -34,6 +35,7 @@
 		9DAA1DFF241073EB000FC05D /* Bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAA1DFE241073EB000FC05D /* Bridges.swift */; };
 		9DAC492223FC9C8000018412 /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC492023FC9C8000018412 /* QueensSolver.swift */; };
 		9DAC492323FC9C8000018412 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC492123FC9C8000018412 /* Board.swift */; };
+		9DC2BF422411B8F6001BEA62 /* 207CourseSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC2BF412411B8F6001BEA62 /* 207CourseSchedule.swift */; };
 		9DF660CA24087C3900B267F4 /* FloodFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660C924087C3900B267F4 /* FloodFill.swift */; };
 		9DF660CC240883F300B267F4 /* HowManyIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660CB240883F300B267F4 /* HowManyIsland.swift */; };
 		9DF660CE24088F5100B267F4 /* Sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF660CD24088F5100B267F4 /* Sushi.swift */; };
@@ -67,6 +69,7 @@
 		9D710CAD23FDE54A0077624F /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		9D710CB123FF49A70077624F /* findSmallest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = findSmallest.swift; sourceTree = "<group>"; };
 		9D710CB323FF4B570077624F /* SubstringPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringPattern.swift; sourceTree = "<group>"; };
+		9D978F582411CDF600B7BF3F /* 210CourseScheduleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 210CourseScheduleII.swift; sourceTree = "<group>"; };
 		9D9F33A423F2200500569A59 /* SwiftAlgorithmsDataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithmsDataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9F33B023F220ED00569A59 /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 		9D9F33B223F2286A00569A59 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		9DAA1DFE241073EB000FC05D /* Bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridges.swift; sourceTree = "<group>"; };
 		9DAC492023FC9C8000018412 /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
 		9DAC492123FC9C8000018412 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		9DC2BF412411B8F6001BEA62 /* 207CourseSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = 207CourseSchedule.swift; path = SwiftAlgorithmsDataStructure/leetCode/207CourseSchedule.swift; sourceTree = SOURCE_ROOT; };
 		9DF660C7240876AA00B267F4 /* UF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 		9DF660C924087C3900B267F4 /* FloodFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFill.swift; sourceTree = "<group>"; };
 		9DF660CB240883F300B267F4 /* HowManyIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyIsland.swift; sourceTree = "<group>"; };
@@ -274,8 +278,10 @@
 		9DF660D1240B501D00B267F4 /* leetCode */ = {
 			isa = PBXGroup;
 			children = (
+				9DC2BF412411B8F6001BEA62 /* 207CourseSchedule.swift */,
 				9DF660CF240B415300B267F4 /* add2Num.swift */,
 				9DF660D2240B584A00B267F4 /* LongestSubstring.swift */,
+				9D978F582411CDF600B7BF3F /* 210CourseScheduleII.swift */,
 			);
 			path = leetCode;
 			sourceTree = "<group>";
@@ -372,7 +378,9 @@
 				9DA99DFF2400918D00475F32 /* Diameter.swift in Sources */,
 				9D9F33CA23F5F79800569A59 /* Stack.swift in Sources */,
 				9D9F33C623F5F72E00569A59 /* Bag.swift in Sources */,
+				9DC2BF422411B8F6001BEA62 /* 207CourseSchedule.swift in Sources */,
 				9DF660D0240B415300B267F4 /* add2Num.swift in Sources */,
+				9D978F592411CDF600B7BF3F /* 210CourseScheduleII.swift in Sources */,
 				9D534CB02405C7A40025B4CF /* DFS.swift in Sources */,
 				9DA99DFD2400917800475F32 /* FindParent.swift in Sources */,
 				9D710CAC23FDE4550077624F /* TreeOrderSort.swift in Sources */,

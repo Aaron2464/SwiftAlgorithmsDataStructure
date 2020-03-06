@@ -5,6 +5,18 @@
 //  Created by AaronH on 2020-03-03.
 //  Copyright © 2020 AaronH. All rights reserved.
 //
+//9 10
+//1 4
+//1 9
+//2 4
+//3 5
+//4 7
+//5 7
+//5 6
+//7 6
+//6 8
+//7 8
+
 
 import Foundation
 
