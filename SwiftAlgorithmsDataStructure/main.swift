@@ -83,8 +83,10 @@ import Foundation
 
 //TopologicalSort()
 
-print(canFinish(2, [[1,0]]))
-print(canFinish(2, [[1,0],[0,1]]))
-print(canFinish(3, [[0,1],[0,2],[1,2]]))
-print(canFinish(2, []))
-print(canFinish(3, [[1,0],[1,2],[0,1]]))
+//print(canFinish(2, [[1,0]]))
+
+print(findOrder(2, [[1,0]]))
+print(findOrder(4, [[1,0],[2,0],[3,1],[3,2]]))
+print(findOrder(3, [[0,2],[1,2],[2,0]]))
+
+

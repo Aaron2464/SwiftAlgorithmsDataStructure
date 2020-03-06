@@ -44,7 +44,7 @@ func TopologicalSort() {
     // topological sort
     let q = Queue<Int>()
     // initial state
-    for v in 1...N {
+    for v in 1...N { // N vertex
         if indegree[v] == 0 {
             q.enqueue(item: v)
         }
