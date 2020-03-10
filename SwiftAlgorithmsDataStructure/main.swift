@@ -85,8 +85,9 @@ import Foundation
 
 //print(canFinish(2, [[1,0]]))
 
-print(findOrder(2, [[1,0]]))
-print(findOrder(4, [[1,0],[2,0],[3,1],[3,2]]))
-print(findOrder(3, [[0,2],[1,2],[2,0]]))
+//print(findOrder(2, [[1,0]]))
+//print(findOrder(4, [[1,0],[2,0],[3,1],[3,2]]))
+//print(findOrder(3, [[0,2],[1,2],[2,0]]))
 
 
+print(twoCityScheduleCost([[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]]))
