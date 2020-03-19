@@ -92,4 +92,8 @@ import Foundation
 
 //print(twoCityScheduleCost([[259,770],[448,54],[926,667],[184,139],[840,118],[577,469]]))
 
-NonDecreasingDigit(howManyDigits: 3)
+//NonDecreasingDigit(howManyDigits: 3)
+
+//print(sumOfSquare(11))
+
+print(ClimblingStairs(n: 5))
